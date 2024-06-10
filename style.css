@@ -1,0 +1,47 @@
+:root {
+  --main-bg: #e5f9e0;
+  --mint: #40c9a2;
+  --light-green: #a3f7b5;
+  --persian: #2f9c95;
+  --rose-ebony: #664147;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#bmi-form {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+#jumbotron {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+/*#jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}

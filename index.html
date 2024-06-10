@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Health Planet</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <nav id="top-menu"></nav>
+    <div id="jumbotron"></div>
+    <main>
+      <form id="bmi-form">
+        <h3>BMI Calculator</h3>
+        <label for="height">Height(in cm)</label>
+        <input type="number" step="0.01" id="height" name="height" required />
+        <br />
+        <br />
+        <label for="weight">Weight (in kg)</label>
+        <input type="number" step="0.01" id="weight" name="weight" required />
+        <br />
+        <br />
+        <button type="submit">Calculate BMI</button> <br> <br>
+        
+        <div ><p id="result"></p>
+      </form></div>
+
+     
+
+      <div class="info">
+        <h3>BMI introduction</h3>
+        <p>
+          BMI is a measurement of a person's leanness or corpulence based on
+          their height and weight, and is intended to quantify tissue mass. It
+          is widely used as a general indicator of whether a person has a
+          healthy body weight for their height. Specifically, the value obtained
+          from the calculation of BMI is used to categorize whether a person is
+          underweight, normal weight, overweight, or obese depending on what
+          range the value falls between. These ranges of BMI vary based on
+          factors such as region and age, and are sometimes further divided into
+          subcategories such as severely underweight or very severely obese.
+          Being overweight or underweight can have significant health effects,
+          so while BMI is an imperfect measure of healthy body weight, it is a
+          useful indicator of whether any additional testing or action is
+          required. Refer to the table below to see the different categories
+          based on BMI that are used by the calculator.
+        </p>
+        <div class="bmi-graph">
+          <h3>BMI chart for adults</h3>
+          <p>
+            This is a graph of BMI categories based on the World Health
+            Organization data. The dashed lines represent subdivisions within a
+            major categorization.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="want-more"></div>
+    <div class="see-also"></div>
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
