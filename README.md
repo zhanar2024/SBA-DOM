@@ -1,0 +1,1 @@
+This is an SBA project on DOM manipulation. I created an educational health page that calculates BMI, and provides information on risks associated with various BMI variations, supported by charts and infographics.
