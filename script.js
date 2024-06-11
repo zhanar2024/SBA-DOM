@@ -2,15 +2,15 @@
 
 const header = document.querySelector("#header");
 const body = document.querySelector("body");
-body.style.backgroundColor = "var(--mint)";
+body.style.backgroundColor = "var(--main-bg)";
 const jumbotron = document.querySelector("#jumbotron");
 const headline = (jumbotron.innerHTML =
-  "<h1> Welcome to The Health Planet</h1>");
+  '<h1 style = "color: var(--persian); font-weight:bold;"> Welcome!</h1>');
 
 //styling jumbotron
 
 const jumboImageURL =
-  "https://media.gettyimages.com/id/1311532658/photo/young-woman-losing-weight.jpg?s=612x612&w=0&k=20&c=dO2ceVicc-7f7eBImdEWQwTL89QEsqg687uVTJaTPys=";
+  "https://media.gettyimages.com/id/182912411/photo/bathroom-scales-and-tape-measure.jpg?s=612x612&w=0&k=20&c=X6yPt4cj4UOMH4J-szcuqIwt9oyoyeAZq5xLVs8qdBg=";
 
 jumbotron.style.backgroundImage = `url(${jumboImageURL})`;
 jumbotron.style.backgroundSize = "cover";
@@ -54,14 +54,27 @@ bmiForm.addEventListener("submit", function (event) {
 
 //styling bmi calculator
 
-bmiForm.style.backgroundColor = "yellow";
+bmiForm.style.backgroundColor = "var(--light-green)";
 bmiForm.style.margin = "20px";
 bmiForm.style.padding = "20px";
 bmiForm.style.paddingTop = "6px";
 
 // appending an item
-const bmiGraph = document.querySelector("bmi-graph");
-const graphGif = document.createElement("gif");
+
+const imageCont = document.querySelector("#imageCont");
+const graphGif = document.createElement("img");
 graphGif.src = "https://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif";
-graphGif.alt = "It is BMI graph";
-bmiGraph.appendChild(graphGif);
+graphGif.alt = "It is graph";
+imageCont.appendChild(graphGif);
+
+//styling info
+
+const info = document.getElementsByClassName("info");
+info[0].style.margin = "20px";
+
+const headers = document.querySelectorAll("h3");
+for (const header of headers) {
+  header.style.color = "var(--rose-ebony)";
+  header.style.fontWeight = "bold";
+  header.style.marginLeft = "20px";
+}

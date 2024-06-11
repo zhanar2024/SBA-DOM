@@ -23,14 +23,13 @@ html {
 
 #jumbotron {
   position: relative;
-  text-align: center;
   color: white;
-  padding: 50px 20px;
-  height: 50vh;
+  padding: 20px 20px;
+  height: 30vh;
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: baseline; */
+  align-items: baseline;
 }
 
 /*#jumbotron::before {
