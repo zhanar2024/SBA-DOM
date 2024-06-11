@@ -1,9 +1,17 @@
+var menuLinks = [
+  { text: "Company", href: "/company" },
+  { text: "Exercise", href: "/exercise" },
+  { text: "Recipes", href: "/recipes" },
+  { text: "Contact Us", href: "/contacts" },
+];
+
 //giving background color
 
 const header = document.querySelector("#header");
 const body = document.querySelector("body");
 body.style.backgroundColor = "var(--main-bg)";
 const jumbotron = document.querySelector("#jumbotron");
+const topMenu = document.querySelector("#top-menu");
 
 //styling jumbotron
 
@@ -23,9 +31,23 @@ if (userInput !== null) {
   jumbotron.innerHTML = `<h1 style = "color: var(--persian); font-weight:bold;"> Welcome, ${userInput}!</h1>`;
 } else {
   console.log("try again");
+
+  //adding navbar
+  const topMenu = document.querySelector("#top-menu");
+  topMenu.style.height = "10%";
+  topMenu.style.backgroundColor = "var(--mint)";
+  topMenu.classList.add("flex-ctr");
+
+  //adding elemnts to nav bar
+  menuLinks.forEach((link) => {
+    const a = document.createElement("a");
+    a.setAttribute("href", link.href);
+    a.textContent = link.text;
+    topMenu.appendChild(a);
+  });
 }
 
-//BMI calculator
+//BMI calculator (form)
 const bmiForm = document.getElementById("bmi-form"); //selectElementById
 const heightInput = document.getElementById("height");
 const weightInput = document.getElementById("weight");
